@@ -18,7 +18,11 @@ header{
 }
 
 .navbar .navbar-brand{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+}
+
+.nav-link{
+    font-size: 1.2rem;
 }
 
 footer{
@@ -136,29 +140,8 @@ section{
       -webkit-transform: scale3d(1, 1, 1);
               transform: scale3d(1, 1, 1);
     }
-  }
-  
-
-@media (max-width: 767px){
-    .alert{
-        width: 65%;
-    }
-
-    .prediction_form{
-        margin: 0 auto;
-        width: 94%!important;
-    }
-
-    .result{
-        margin: 0 auto;
-        width: 94%!important;
-        text-align: center!important;
-    }
-
-    footer{
-        margin-top: 40px;
-    }
 }
+  
 
 .display_image{
     width: 100%;
@@ -216,4 +199,30 @@ input#img_input:focus + label {
     box-shadow: 7px 7px 14px #191c1f,
                 7px -7px 14px #292e33;
     transition: all 0.5s ease;
+}
+
+@media (max-width: 767px){
+    .alert{
+        width: 65%;
+    }
+
+    .display_image{
+        height: 260px!important;
+    }
+
+    .prediction_form{
+        margin: 0 auto;
+        width: 94%!important;
+    }
+
+    .result{
+        margin: 0 auto;
+        width: 94%!important;
+        text-align: center!important;
+    }
+
+    footer{
+        margin-top: 40px;
+    }
+    
 }
