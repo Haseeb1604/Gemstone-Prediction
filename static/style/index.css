@@ -4,13 +4,22 @@
     box-sizing: border-box;
 }
 
-body{
+.alert{
+    position: absolute!important;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    display: none;
+}
+
+section{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 60px;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .display_image{
