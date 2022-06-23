@@ -51,7 +51,14 @@ window.addEventListener('DOMContentLoaded',function(){
                     data: formdata,
                     onsuccess: (responseText)=>{
                         var data = JSON.parse(responseText);
-                        pred.innerHTML = data['pred'];
+                        pred.innerHTML = `
+                            <div class="prediction_container mt-2" id="prediction_container">
+                                <span><strong>Prediction : </strong>
+                                </span> <span>${data['pred']}</span> 
+                            </div>`;
+                            document.getElementById('prediction_container').scrollIntoView({
+                                behavior: 'smooth'
+                            });
                         popAlert(alert, `Image has been successfully Predicted`, "alert-success");
                     },
                     onprogress: (val) =>progressBar(val, progress),

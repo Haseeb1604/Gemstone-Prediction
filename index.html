@@ -13,7 +13,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Gemstone Prediction</a>
+                  <a class="navbar-brand">Gemstone Prediction</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -31,31 +31,39 @@
               </nav>
         </div>
     </header>
-    <section>
+    <section class="text-center">
         <div id="alert" class="alert fade show" role="alert">
             <span class="message"></span>
             <button type="button" class="btn-close"></button>
         </div>
         <h2>Upload Gemstone Image For Prediction</h2>
-        <form id="myform">
-            <div class="mt-3 mb-3 card bg-dark display_image"></div>
-            <div class="mb-3 input_control">
-                <input class="form-control form-control" type="file" id="img_input" accep="image/png, image/jpeg, image/jpg" name="image" required>
-                <label for="img_input">Select File</label>
+        <div class="d-flex flex-wrap flex-md-row flex-sm-column w-100">
+            <div class="prediction_form">
+                <form id="myform">
+                    <div class="mt-3 mb-3 card bg-dark display_image"></div>
+                    <div class="mb-3 input_control">
+                        <input class="form-control form-control" type="file" id="img_input" accep="image/png, image/jpeg, image/jpg" name="image" required>
+                        <label for="img_input">Select File</label>
+                    </div>
+                    <div class="mb-2 text-center">
+                        <input type="submit" class="btn btn-submit" value="Submit">
+                    </div>
+                    <div class="progress w-100" id="progress" style="display: none;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div>
+                </form>
             </div>
-            <div class="mb-2 text-center">
-                <input type="submit" class="btn btn-light" value="Submit">
+            <div class="result">
+                <div class="instructions mt-4">
+                    <p>Before Making Predictions make sure you have viewed the list of stones which the model support for prediction. The Accuracy of this Machine Learning Model is 83.17%. So there may be some predictions wrong</p>
+                </div>
+                <div class="pred text-center"></div>
             </div>
-            <div class="progress w-100" id="progress" style="display: none;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-            </div>
-        </form>
-        <div class="pred">
-
         </div>
     </section>
-    <footer>
 
+    <footer class="text-center pb-2">
+        <div class="footer-content" style="font-size:1em">Developed with <span class="icon">♥</span> by <a href="https://mhaseeb1604.netlify.app" target="_blank" class="name">Muhamamd Haseeb</a> © Copyright 2021</div>
     </footer>
 
     <script src="./js/bootstrap5.min.js"></script>
