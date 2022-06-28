@@ -18,3 +18,4 @@ Sapphire Blue<br>
 Zoisite<br><br>
 
 Upload an Image of type jpg, jpeg, png to get your predictions.
+Check out live preview <a href="https://gemsidentify.netlify.app/" target="_blank">Gemstone Web App</a>
