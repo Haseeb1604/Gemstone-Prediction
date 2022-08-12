@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded',function(){
             if(size<=4){
                 formdata = new FormData(form);
                 ajax({
-                    url: "https://gemsapi-d7s57.ondigitalocean.app/image",
+                    url: "https://gemstone-q6cjz.ondigitalocean.app/image",
                     method: "POST",
                     data: formdata,
                     onsuccess: (responseText)=>{
